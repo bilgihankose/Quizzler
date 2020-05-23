@@ -20,12 +20,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateUI()
+        updateUI() //Uygulama yuklenirken UI'i getir.
     }
     
     @IBAction func answerButtonPressed(_ sender: UIButton) {
         let userAnser = sender.currentTitle! //Kesinlikte bir degere sahip oldugunu bildigimiz icin string gelecek dedik.
-        let userGotItRight =  quizBrain.checkAnswer(userAnser)
+        let userGotItRight = quizBrain.checkAnswer(userAnser)
         
         
         if userGotItRight {
