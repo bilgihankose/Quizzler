@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "dc3b209accb85fea610b77b988f5e892"
+build_time: [1590226869, 861870000]
+inputs:
+  "/Users/bilgihankose/Dev/Appbrewery/Quizzler/Quizzler/AppDelegate.swift": [1590225580, 459194163]
+  "/Users/bilgihankose/Dev/Appbrewery/Quizzler/Quizzler/SceneDelegate.swift": [1590225580, 496654632]
+  "/Users/bilgihankose/Dev/Appbrewery/Quizzler/Quizzler/ViewController.swift": [1590225551, 805252176]
