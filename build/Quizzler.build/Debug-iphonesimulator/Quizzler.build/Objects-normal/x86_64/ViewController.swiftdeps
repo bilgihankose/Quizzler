@@ -6,80 +6,391 @@ provides-nominal:
 provides-member:
 - ["8Quizzler14ViewControllerC", ""]
 provides-dynamic-lookup:
+- "answerButtonPressed"
+- "falseButton"
+- "progressBar"
+- "questionLabel"
+- "questionNumber"
+- "quiz"
+- "trueButton"
+- "updateUI"
 - "viewDidLoad"
 depends-top-level:
+- !private "+="
+- !private "-"
+- !private "<"
+- !private "=="
+- "AssignmentPrecedence"
+- "FloatLiteralType"
+- "IntegerLiteralType"
+- "StringLiteralType"
+- "UIButton"
+- "UILabel"
+- "UIProgressView"
 - "UIViewController"
 - "ViewController"
+- !private "print"
 depends-member:
+- !private ["Sa", "count"]
+- !private ["Sa", "subscript"]
+- !private ["s10ArraySliceV", "subscript"]
+- !private ["SK", "count"]
+- !private ["SK", "subscript"]
+- !private ["So15CALayerDelegateP", "currentTitle"]
+- !private ["So15CALayerDelegateP", "text"]
 - ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "currentTitle"]
+- !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "questionLabel"]
+- !private ["s7CVarArgP", "questionNumber"]
+- !private ["s7CVarArgP", "quiz"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "text"]
+- !private ["s7CVarArgP", "updateUI"]
 - !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["Sl", "count"]
+- !private ["Sl", "subscript"]
+- !private ["10Foundation15ContiguousBytesP", "count"]
+- !private ["10Foundation15ContiguousBytesP", "subscript"]
 - ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "currentTitle"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "questionLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "questionNumber"]
+- !private ["s28CustomDebugStringConvertibleP", "quiz"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s28CustomDebugStringConvertibleP", "updateUI"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "text"]
 - ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "currentTitle"]
+- !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "questionLabel"]
+- !private ["s23CustomStringConvertibleP", "questionNumber"]
+- !private ["s23CustomStringConvertibleP", "quiz"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- !private ["s23CustomStringConvertibleP", "updateUI"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["10Foundation12DataProtocolP", "count"]
+- !private ["10Foundation12DataProtocolP", "subscript"]
+- !private ["Se", "count"]
+- !private ["Se", "subscript"]
+- !private ["Se", "text"]
+- !private ["SE", "count"]
+- !private ["SE", "subscript"]
+- !private ["SE", "text"]
 - ["SQ", ""]
+- !private ["SQ", "count"]
+- !private ["SQ", "currentTitle"]
+- !private ["SQ", "print"]
+- !private ["SQ", "questionLabel"]
+- !private ["SQ", "questionNumber"]
+- !private ["SQ", "quiz"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "text"]
+- !private ["SQ", "updateUI"]
 - !private ["SQ", "viewDidLoad"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s23ExpressibleByNilLiteralP", "text"]
 - ["SH", ""]
+- !private ["SH", "count"]
+- !private ["SH", "currentTitle"]
+- !private ["SH", "print"]
+- !private ["SH", "questionLabel"]
+- !private ["SH", "questionNumber"]
+- !private ["SH", "quiz"]
+- !private ["SH", "subscript"]
+- !private ["SH", "text"]
+- !private ["SH", "updateUI"]
 - !private ["SH", "viewDidLoad"]
+- !private ["SM", "count"]
+- !private ["SM", "subscript"]
+- !private ["10Foundation19MutableDataProtocolP", "count"]
+- !private ["10Foundation19MutableDataProtocolP", "subscript"]
 - ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "currentTitle"]
+- !private ["So8NSCodingP", "print"]
+- !private ["So8NSCodingP", "questionLabel"]
+- !private ["So8NSCodingP", "questionNumber"]
+- !private ["So8NSCodingP", "quiz"]
+- !private ["So8NSCodingP", "text"]
+- !private ["So8NSCodingP", "updateUI"]
 - !private ["So8NSCodingP", "viewDidLoad"]
 - ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "print"]
+- !private ["So26NSExtensionRequestHandlingP", "questionLabel"]
+- !private ["So26NSExtensionRequestHandlingP", "questionNumber"]
+- !private ["So26NSExtensionRequestHandlingP", "quiz"]
+- !private ["So26NSExtensionRequestHandlingP", "updateUI"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- ["So8NSObjectC", "UIButton"]
+- ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "UIProgressView"]
+- ["So8NSObjectC", "answerButtonPressed"]
+- !private ["So8NSObjectC", "currentTitle"]
+- ["So8NSObjectC", "falseButton"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "print"]
+- ["So8NSObjectC", "progressBar"]
+- ["So8NSObjectC", "questionLabel"]
+- ["So8NSObjectC", "questionNumber"]
+- ["So8NSObjectC", "quiz"]
+- !private ["So8NSObjectC", "text"]
+- ["So8NSObjectC", "trueButton"]
+- ["So8NSObjectC", "updateUI"]
 - ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "currentTitle"]
+- !private ["So8NSObjectP", "print"]
+- !private ["So8NSObjectP", "questionLabel"]
+- !private ["So8NSObjectP", "questionNumber"]
+- !private ["So8NSObjectP", "quiz"]
+- !private ["So8NSObjectP", "text"]
+- !private ["So8NSObjectP", "updateUI"]
 - !private ["So8NSObjectP", "viewDidLoad"]
+- !private ["Sq", "text"]
+- !private ["Sk", "count"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "count"]
+- !private ["Sm", "subscript"]
+- !private ["ST", "count"]
+- !private ["ST", "subscript"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "currentTitle"]
+- !private ["So29UIAccessibilityIdentificationP", "currentTitle"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So12UIAppearanceP", "currentTitle"]
+- !private ["So12UIAppearanceP", "text"]
 - ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "currentTitle"]
+- !private ["So21UIAppearanceContainerP", "print"]
+- !private ["So21UIAppearanceContainerP", "questionLabel"]
+- !private ["So21UIAppearanceContainerP", "questionNumber"]
+- !private ["So21UIAppearanceContainerP", "quiz"]
+- !private ["So21UIAppearanceContainerP", "text"]
+- !private ["So21UIAppearanceContainerP", "updateUI"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- !private ["So8UIButtonC", "currentTitle"]
 - ["So18UIContentContainerP", ""]
+- !private ["So18UIContentContainerP", "print"]
+- !private ["So18UIContentContainerP", "questionLabel"]
+- !private ["So18UIContentContainerP", "questionNumber"]
+- !private ["So18UIContentContainerP", "quiz"]
+- !private ["So18UIContentContainerP", "updateUI"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So9UIControlC", "currentTitle"]
+- !private ["So17UICoordinateSpaceP", "currentTitle"]
+- !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So13UIDynamicItemP", "currentTitle"]
+- !private ["So13UIDynamicItemP", "text"]
 - ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "currentTitle"]
+- !private ["So18UIFocusEnvironmentP", "print"]
+- !private ["So18UIFocusEnvironmentP", "questionLabel"]
+- !private ["So18UIFocusEnvironmentP", "questionNumber"]
+- !private ["So18UIFocusEnvironmentP", "quiz"]
+- !private ["So18UIFocusEnvironmentP", "text"]
+- !private ["So18UIFocusEnvironmentP", "updateUI"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- !private ["So11UIFocusItemP", "currentTitle"]
+- !private ["So11UIFocusItemP", "text"]
+- !private ["So20UIFocusItemContainerP", "currentTitle"]
+- !private ["So20UIFocusItemContainerP", "text"]
+- !private ["So7UILabelC", "text"]
+- !private ["So24UILargeContentViewerItemP", "currentTitle"]
+- !private ["So24UILargeContentViewerItemP", "text"]
 - ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "currentTitle"]
+- !private ["So30UIPasteConfigurationSupportingP", "print"]
+- !private ["So30UIPasteConfigurationSupportingP", "questionLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "questionNumber"]
+- !private ["So30UIPasteConfigurationSupportingP", "quiz"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "updateUI"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- ["So11UIResponderC", "UIButton"]
+- ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "UIProgressView"]
+- ["So11UIResponderC", "answerButtonPressed"]
+- !private ["So11UIResponderC", "currentTitle"]
+- ["So11UIResponderC", "falseButton"]
 - ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "print"]
+- ["So11UIResponderC", "progressBar"]
+- ["So11UIResponderC", "questionLabel"]
+- ["So11UIResponderC", "questionNumber"]
+- ["So11UIResponderC", "quiz"]
+- !private ["So11UIResponderC", "text"]
+- ["So11UIResponderC", "trueButton"]
+- ["So11UIResponderC", "updateUI"]
 - ["So11UIResponderC", "viewDidLoad"]
 - ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "currentTitle"]
+- !private ["So30UIResponderStandardEditActionsP", "print"]
+- !private ["So30UIResponderStandardEditActionsP", "questionLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "questionNumber"]
+- !private ["So30UIResponderStandardEditActionsP", "quiz"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
+- !private ["So30UIResponderStandardEditActionsP", "updateUI"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "currentTitle"]
 - ["So16UIStateRestoringP", ""]
+- !private ["So16UIStateRestoringP", "print"]
+- !private ["So16UIStateRestoringP", "questionLabel"]
+- !private ["So16UIStateRestoringP", "questionNumber"]
+- !private ["So16UIStateRestoringP", "quiz"]
+- !private ["So16UIStateRestoringP", "updateUI"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "currentTitle"]
+- !private ["So18UITraitEnvironmentP", "print"]
+- !private ["So18UITraitEnvironmentP", "questionLabel"]
+- !private ["So18UITraitEnvironmentP", "questionNumber"]
+- !private ["So18UITraitEnvironmentP", "quiz"]
+- !private ["So18UITraitEnvironmentP", "text"]
+- !private ["So18UITraitEnvironmentP", "updateUI"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "currentTitle"]
+- !private ["So23UIUserActivityRestoringP", "print"]
+- !private ["So23UIUserActivityRestoringP", "questionLabel"]
+- !private ["So23UIUserActivityRestoringP", "questionNumber"]
+- !private ["So23UIUserActivityRestoringP", "quiz"]
+- !private ["So23UIUserActivityRestoringP", "text"]
+- !private ["So23UIUserActivityRestoringP", "updateUI"]
 - !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
+- !private ["So6UIViewC", "currentTitle"]
+- !private ["So6UIViewC", "text"]
+- ["So16UIViewControllerC", "UIButton"]
+- ["So16UIViewControllerC", "UILabel"]
+- ["So16UIViewControllerC", "UIProgressView"]
 - ["So16UIViewControllerC", ""]
+- ["So16UIViewControllerC", "answerButtonPressed"]
+- ["So16UIViewControllerC", "falseButton"]
 - ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "print"]
+- ["So16UIViewControllerC", "progressBar"]
+- ["So16UIViewControllerC", "questionLabel"]
+- ["So16UIViewControllerC", "questionNumber"]
+- ["So16UIViewControllerC", "quiz"]
+- ["So16UIViewControllerC", "trueButton"]
+- ["So16UIViewControllerC", "updateUI"]
 - ["So16UIViewControllerC", "viewDidLoad"]
+- ["8Quizzler14ViewControllerC", "UIButton"]
+- ["8Quizzler14ViewControllerC", "UILabel"]
+- ["8Quizzler14ViewControllerC", "UIProgressView"]
+- ["8Quizzler14ViewControllerC", "answerButtonPressed"]
 - ["8Quizzler14ViewControllerC", "deinit"]
+- ["8Quizzler14ViewControllerC", "falseButton"]
 - ["8Quizzler14ViewControllerC", "init"]
+- !private ["8Quizzler14ViewControllerC", "print"]
+- ["8Quizzler14ViewControllerC", "progressBar"]
+- ["8Quizzler14ViewControllerC", "questionLabel"]
+- ["8Quizzler14ViewControllerC", "questionNumber"]
+- ["8Quizzler14ViewControllerC", "quiz"]
+- ["8Quizzler14ViewControllerC", "trueButton"]
+- ["8Quizzler14ViewControllerC", "updateUI"]
 - ["8Quizzler14ViewControllerC", "viewDidLoad"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s19_HasContiguousBytesP", "count"]
+- !private ["s19_HasContiguousBytesP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "currentTitle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "questionLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "questionNumber"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "quiz"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "updateUI"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "currentTitle"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "print"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "questionLabel"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "questionNumber"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "quiz"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "text"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "updateUI"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewDidLoad"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "text"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "currentTitle"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "text"]
 depends-nominal:
+- !private "Sa"
+- !private "s10ArraySliceV"
+- !private "SK"
+- !private "So15CALayerDelegateP"
 - "s7CVarArgP"
+- !private "Sl"
+- !private "10Foundation15ContiguousBytesP"
 - "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "SE"
 - "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
 - "SH"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
 - "So8NSCodingP"
 - "So26NSExtensionRequestHandlingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
+- !private "Sq"
+- !private "Sk"
+- !private "Sm"
+- !private "ST"
+- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
+- !private "So8UIButtonC"
 - "So18UIContentContainerP"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- !private "So9UIControlC"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- !private "So7UILabelC"
+- !private "So24UILargeContentViewerItemP"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
+- !private "So35UISpringLoadedInteractionSupportingP"
 - "So16UIStateRestoringP"
 - "So18UITraitEnvironmentP"
 - "So23UIUserActivityRestoringP"
+- !private "So6UIViewC"
 - "So16UIViewControllerC"
 - "8Quizzler14ViewControllerC"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s38__DefaultCustomPlaygroundQuickLookableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
@@ -108,4 +419,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "939bb7e8c3a7b4567ab8b8d960798a84"
+interface-hash: "89e98321ea02ee24e687f92031362dc9"
