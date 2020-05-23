@@ -247,6 +247,7 @@ SWIFT_CLASS("_TtC8Quizzler14ViewController")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified falseButton;
 - (void)viewDidLoad;
 - (IBAction)answerButtonPressed:(UIButton * _Nonnull)sender;
+- (void)updateUI;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
