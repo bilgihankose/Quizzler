@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         let userAnser = sender.currentTitle! //Kesinlikte bir degere sahip oldugunu bildigimiz icin string gelecek dedik.
         let userGotItRight = quizBrain.checkAnswer(userAnser)
         
-        
+        //userGotItRight true ise demek oldugu icin == true yazmamiza gerek yok
         if userGotItRight {
             sender.backgroundColor = UIColor.green
         } else {
